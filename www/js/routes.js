@@ -26,6 +26,106 @@ angular.module('app.routes', [])
     controller: 'menuCtrl'
   })
 
+  .state('menu.joysticksTroubleshooting', {
+    url: '/JT',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/joysticksTroubleshooting.html',
+        controller: 'joysticksTroubleshootingCtrl'
+      }
+    }
+  })
+
+  .state('menu.rightAndLeftWheelMovementTroubleshooting', {
+    url: '/R&LWM',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/rightAndLeftWheelMovementTroubleshooting.html',
+        controller: 'rightAndLeftWheelMovementTroubleshootingCtrl'
+      }
+    }
+  })
+
+  .state('menu.gearUpAndDownTroubleshooting', {
+    url: '/GU&D',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/gearUpAndDownTroubleshooting.html',
+        controller: 'gearUpAndDownTroubleshootingCtrl'
+      }
+    }
+  })
+
+  .state('menu.gearGrabberAndCloserTroubleshooting', {
+    url: '/GG&C',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/gearGrabberAndCloserTroubleshooting.html',
+        controller: 'gearGrabberAndCloserTroubleshootingCtrl'
+      }
+    }
+  })
+
+  .state('menu.automaticGearPickupTroubleshooting', {
+    url: '/AGP',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/automaticGearPickupTroubleshooting.html',
+        controller: 'automaticGearPickupTroubleshootingCtrl'
+      }
+    }
+  })
+
+  .state('menu.climberRotationTroubleshootion', {
+    url: '/CR',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/climberRotationTroubleshootion.html',
+        controller: 'climberRotationTroubleshootionCtrl'
+      }
+    }
+  })
+
+  .state('menu.agitatorRotationTroubleshooting', {
+    url: '/AG',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/agitatorRotationTroubleshooting.html',
+        controller: 'agitatorRotationTroubleshootingCtrl'
+      }
+    }
+  })
+
+  .state('menu.agitatorUnjamingTroubleshooting', {
+    url: '/AU',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/agitatorUnjamingTroubleshooting.html',
+        controller: 'agitatorUnjamingTroubleshootingCtrl'
+      }
+    }
+  })
+
+  .state('menu.batteryReplacementTroubleshooting', {
+    url: '/BR',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/batteryReplacementTroubleshooting.html',
+        controller: 'batteryReplacementTroubleshootingCtrl'
+      }
+    }
+  })
+
+  .state('menu.goodJob', {
+    url: '/page12',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/goodJob.html',
+        controller: 'goodJobCtrl'
+      }
+    }
+  })
+
 $urlRouterProvider.otherwise('/side-menu21/page1')
 
   
