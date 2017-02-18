@@ -126,6 +126,26 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('menu.eXPLOSIONS', {
+    url: '/BOOM',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/eXPLOSIONS.html',
+        controller: 'eXPLOSIONSCtrl'
+      }
+    }
+  })
+
+  .state('menu.fuelShooterTroubleshooter', {
+    url: '/FS',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/fuelShooterTroubleshooter.html',
+        controller: 'fuelShooterTroubleshooterCtrl'
+      }
+    }
+  })
+
 $urlRouterProvider.otherwise('/side-menu21/page1')
 
   
